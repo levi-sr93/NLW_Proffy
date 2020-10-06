@@ -8,8 +8,6 @@ import giveClassIcon from '../../assets/images/icons/give-classes.svg';
 import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
 
 import './styles.css';
-import TeachersList from '../TeachersList';
-import TeacherForm from '../TeacherForm';
 
 const Landing = () => {
   return (
