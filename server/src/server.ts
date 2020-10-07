@@ -1,8 +1,10 @@
 import express from 'express';
+import routes from './routes';
 
 const app = express();
 
 app.use(express.json()); //permitir que o Express utilize JSON
+app.use(routes)
 
 //ROUTES
 //http://localhost:3333/users
@@ -21,9 +23,5 @@ app.use(express.json()); //permitir que o Express utilize JSON
 //Request Body - Dados para criação ou atualização de um registro; request.body  --- {"name": "fulano", ...}
 //Route Params - Identificar um recurso na rota que se deseja alterar ou deleter; request.params /users/:id {localhost:3333/users/1} 
 //Query Params - Paginação, filtros, ordenação //request.query {localhost:3333/users?page=2&sort=name}
-
-app.get('/', (request, response) => {
-    return response.json({message: 'Hello World'})
-})
 
 app.listen(3333);
