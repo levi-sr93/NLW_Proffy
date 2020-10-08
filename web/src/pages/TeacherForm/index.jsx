@@ -5,7 +5,10 @@ import PageHeader from '../../components/PageHeader';
 const TeacherForm = () => {
   return (
     <div id="page-teacher-form" className="container">
-      <PageHeader title="Amazing that you want teach classes" />
+      <PageHeader 
+        title="Amazing that you want teach classes"
+        description="O primeiro passo é preencher esse formulário de inscrição"
+      />
     </div>
   );
 };
