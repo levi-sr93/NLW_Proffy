@@ -3,6 +3,8 @@ import React from 'react';
 import PageHeader from '../../components/PageHeader';
 import TeacherItem from '../../components/TeacherItem';
 
+import Input from '../../components/Input';
+
 import './styles.css';
 
 const TeachersList = () => {
@@ -10,20 +12,9 @@ const TeachersList = () => {
     <div id="page-teacher-list" className="container">
       <PageHeader title="Here is all the Proffys available">
         <form id="search-teachers">
-          <div className="input-block">
-            <label htmlFor="subject">Subject</label>
-            <input type="text" id="subject"/>
-          </div>
-
-          <div className="input-block">
-            <label htmlFor="week_day">Week day</label>
-            <input type="text" id="week_day"/>
-          </div>
-
-          <div className="input-block">
-            <label htmlFor="time">Time</label>
-            <input type="text" id="time"/>
-          </div>
+          <Input name="subject" label="Subject"/>
+          <Input name="week_day" label="Week Day"/>
+          <Input type="time" name="time" label="Time"/>
         </form>
       </PageHeader>
       <main>
