@@ -3,23 +3,23 @@ import Input from '../../components/Input';
 
 import PageHeader from '../../components/PageHeader';
 
-import './styles.css'
+import './styles.css';
 
 import warningIcon from '../../assets/images/icons/warning.svg';
 
 const TeacherForm = () => {
   return (
     <div id="page-teacher-form" className="container">
-      <PageHeader 
+      <PageHeader
         title="Amazing that you want teach classes"
-        description="O primeiro passo é preencher esse formulário de inscrição"
+        description="The first step is to fulfill the form."
       />
 
       <main>
         <fieldset>
           <legend>About You</legend>
 
-          <Input name="name" label="Nome completo" />
+          <Input name="name" label="Full Name" />
           <Input name="avatar" label="Avatar" />
           <Input name="whatsapp" label="Whatsapp" />
         </fieldset>
@@ -34,14 +34,12 @@ const TeacherForm = () => {
 
         <footer>
           <p>
-            <img src={warningIcon} alt="Aviso Importante"/>
-            Importante! <br />
-            Preencha todos os dados
+            <img src={warningIcon} alt="Warning" />
+            Important! <br />
+            Fulfill all the informations - They are safe !
           </p>
 
-          <button type="button">
-            Salvar Cadastro
-          </button>
+          <button type="button">Save</button>
         </footer>
       </main>
     </div>
